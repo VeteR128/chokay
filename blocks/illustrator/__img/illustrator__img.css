@@ -1,0 +1,8 @@
+.illustrator__img {
+  max-width: 750px;
+  width: 100%;
+  border: 2px solid white;
+}
+.illustrator__img:hover {
+  opacity: 0.7;
+}
