@@ -1,0 +1,6 @@
+.popup__button_img {
+  width: 30px;
+}
+.popup__button_img:hover {
+  opacity: 0.5;
+}

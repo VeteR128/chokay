@@ -1,6 +1,5 @@
-.header {
+.popup__navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }

@@ -1,0 +1,18 @@
+.header__icons_button {
+  background: none;
+  outline: none;
+  border: 0;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: none;
+  z-index: 5;
+}
+@media screen and (max-width: 1024px) {
+  .header__icons_button {
+    display: block;
+  }
+}

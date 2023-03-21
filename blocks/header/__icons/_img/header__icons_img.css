@@ -1,5 +1,10 @@
 .header__icons_img {
+  padding-top: 3px;
   max-width: 30px;
+  height: 30px;
   width: 100%;
   padding-left: 10px;
+}
+.header__icons_img:hover {
+  opacity: 0.2;
 }

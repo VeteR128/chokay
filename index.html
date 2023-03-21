@@ -9,34 +9,57 @@
   </head>
   <body class="body">
     <div class="page">
-      <header class="header">
-        <div class="header__icons">
-          <a class="header__icons_link" href=""
-            ><img class="header__icons_img" src="images/whiteshop.png" alt=""
-          /></a>
-        </div>
+      <div class="window">
+        <header class="header">
+          <div class="header__icons">
+            <button class="header__icons_button">
+              <span class="header__icons_toggle"></span>
+              <span class="header__icons_toggle"></span>
+              <span class="header__icons_toggle"></span>
+            </button>
+            <a class="header__icons_link" href=""
+              ><img class="header__icons_img" src="images/buy.svg" alt=""
+            /></a>
+          </div>
 
-        <img class="header__logo" src="images/icon.svg" alt="" />
-        <nav class="header__navigation">
-          <a class="header__link" href="index.html">Home</a>
-          <a class="header__link" href="works.html">Works</a>
-          <a class="header__link" href="">Shop</a>
-          <a class="header__link" href="about.html">About</a>
-          <a class="header__link" href="contact.html">Contact</a>
-          <a class="header__link" href="faqs.html">FAQS</a>
-        </nav>
-        <h1 class="header__title">Hi there !</h1>
-        <p class="header__subtitle">
-          I'm Clara Duper, illustrator living in the countryside of south west
-          France, with my dog, my chickens and my Ipad, welcome home.
-        </p>
-        <a class="header__button" href="">Shop</a>
-      </header>
+          <img class="header__logo animate" src="images/icon.svg" alt="" />
+          <nav class="header__navigation animate">
+            <a class="header__link" href="index.html">Home</a>
+            <a class="header__link" href="works.html">Works</a>
+            <a class="header__link" href="">Shop</a>
+            <a class="header__link" href="about.html">About</a>
+            <a class="header__link" href="contact.html">Contact</a>
+            <a class="header__link" href="faqs.html">FAQS</a>
+          </nav>
+          <h1 class="header__title animate">Hi there !</h1>
+          <p class="header__subtitle animate">
+            I'm Clara Duper, illustrator living in the countryside of south west
+            France, with my dog, my chickens and my Ipad, welcome home.
+          </p>
+          <a class="header__button animate" href="">Shop</a>
+        </header>
+      </div>
+
       <footer class="footer">
-        <a class="footer__link" href=""
+        <a class="footer__link animate" href=""
           ><img class="footer__img" src="images/whiteInst.png" alt=""
         /></a>
       </footer>
+      <div class="popup">
+        <div class="popup__container">
+          <div class="popup__menu"></div>
+          <nav class="popup__navigation">
+            <a class="popup__link" href="index.html">Home</a>
+            <a class="popup__link" href="works.html">Works</a>
+            <a class="popup__link" href="">Shop</a>
+            <a class="popup__link" href="about.html">About</a>
+            <a class="popup__link" href="contact.html">Contact</a>
+            <a class="popup__link" href="faqs.html">FAQS</a>
+          </nav>
+        </div>
+      </div>
     </div>
+    <script src="script/script.js"></script>
+    <script src="script/anim.js"></script>
   </body>
 </html>
