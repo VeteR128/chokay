@@ -4,5 +4,6 @@
   border: 2px solid white;
 }
 .illustrator__img:hover {
+  transition: opacity 0.2s linear;
   opacity: 0.7;
 }

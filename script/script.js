@@ -2,6 +2,14 @@ const menuButton = document.querySelector(".header__icons_button");
 const popup = document.querySelectorAll(".popup");
 const closeButton = document.querySelector(".popup__button_img");
 const body = document.querySelector(".body");
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const link = card.querySelector(".card__title").getAttribute("href");
+    location.href = link;
+  });
+});
 
 menuButton.onclick = function () {
   menuButton.classList.toggle("active");
@@ -39,7 +47,6 @@ popup.forEach((item) => {
         evt.target.classList.contains("header__icons_toggle")) &&
       !menuButton.classList.contains("active")
     ) {
-      console.log(menuButton.classList.contains("active"));
       closePopup(item);
     }
   });
