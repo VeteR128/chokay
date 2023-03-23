@@ -10,7 +10,7 @@
   <body class="body">
     <div class="page">
       <header class="header">
-        <div class="header__icons">
+        <div class="header__icons animate">
           <button class="header__icons_button">
             <span class="header__icons_toggle"></span>
             <span class="header__icons_toggle"></span>
@@ -21,8 +21,8 @@
           /></a>
         </div>
 
-        <img class="header__logo" src="images/icon.svg" alt="" />
-        <nav class="header__navigation">
+        <img class="header__logo animate" src="images/icon.svg" alt="" />
+        <nav class="header__navigation animate">
           <a class="header__link" href="index.html">Home</a>
           <a class="header__link" href="works.html">Works</a>
           <a class="header__link" href="shop.html">Shop</a>
@@ -34,30 +34,193 @@
       <main class="main">
         <section class="product">
           <form class="product__form" action="">
-            <img class="product__img" src="images/2221313.PNG" alt="" />
+            <img class="product__img animate" src="images/rex.jpg" alt="" />
             <div>
-              <h1 class="product__title">eqweeeeqe</h1>
-              <h2 class="product__price">500</h2>
-              <div class="product__"></div>
-              <label class="product__option" for="1">1 People</label>
-              <input name="number of people" id="1" type="radio" />
-              <label class="product__option" for="2">2 People</label>
-              <input name="number of people" id="2" type="radio" />
-              <label class="product__option" for="3">3 People</label>
-              <input name="number of people" id="3" type="radio" />
-              <label class="product__option" for="4">4 People</label>
-              <input name="number of people" id="4" type="radio" />
-              <label class="product__option" for="5">5 People</label>
-              <input name="number of people" id="5" type="radio" />
-              <label class="product__option" for="6">6 People</label>
-              <input name="number of people" id="6" type="radio" />
+              <h1 class="product__title animate">Basic Custom Illustration</h1>
+              <h2 class="product__price animate">$40.00 AUD</h2>
+              <h2 class="product__subtitle animate">Format</h2>
+              <div class="product__container animate">
+                <input
+                  class="product__input"
+                  checked
+                  name="Digital format"
+                  id="digital"
+                  type="radio"
+                />
+                <label class="product__option" for="digital"
+                  >Digital format</label
+                >
+              </div>
+              <h2 class="product__subtitle animate">Number of Pets</h2>
+              <div class="product__container animate">
+                <input
+                  class="product__input"
+                  checked
+                  name="Number of Pets"
+                  id="Petsone"
+                  type="radio"
+                />
+                <label class="product__option" for="Petsone">1</label>
+
+                <input
+                  class="product__input"
+                  name="Number of Pets"
+                  id="Petstwo"
+                  type="radio"
+                />
+                <label class="product__option" for="Petstwo">2</label>
+
+                <input
+                  class="product__input"
+                  name="Number of Pets"
+                  id="Petsthree"
+                  type="radio"
+                />
+                <label class="product__option" for="Petsthree">3</label>
+              </div>
+              <h2 class="product__subtitle animate">Illustration Style</h2>
+              <div class="product__container animate">
+                <input
+                  class="product__input"
+                  checked
+                  name="Illustration Style"
+                  id="Style basic"
+                  type="radio"
+                />
+                <label class="product__option" for="Style basic">Basic</label>
+
+                <input
+                  class="product__input"
+                  name="Illustration Style"
+                  id="Style"
+                  type="radio"
+                />
+                <label class="product__option" for="Style">Detailed</label>
+              </div>
+              <h2 class="product__subtitle animate">Number of People</h2>
+              <div class="product__container animate">
+                <input
+                  class="product__input"
+                  checked
+                  name="number of people"
+                  id="1"
+                  type="radio"
+                />
+                <label class="product__option" for="1">1 People</label>
+
+                <input
+                  class="product__input"
+                  name="number of people"
+                  id="2"
+                  type="radio"
+                />
+                <label class="product__option" for="2">2 People</label>
+
+                <input
+                  class="product__input"
+                  name="number of people"
+                  id="3"
+                  type="radio"
+                />
+                <label class="product__option" for="3">3 People</label>
+
+                <input
+                  class="product__input"
+                  name="number of people"
+                  id="4"
+                  type="radio"
+                />
+                <label class="product__option" for="4">4 People</label>
+
+                <input
+                  class="product__input"
+                  name="number of people"
+                  id="5"
+                  type="radio"
+                />
+                <label class="product__option" for="5">5 People</label>
+
+                <input
+                  class="product__input"
+                  name="number of people"
+                  id="6"
+                  type="radio"
+                />
+                <label class="product__option" for="6">6 People</label>
+              </div>
+              <h2 class="product__subtitle animate">Add Eyebrows</h2>
+              <div class="product__container animate">
+                <input
+                  class="product__input"
+                  checked
+                  name="Eyebrows"
+                  id="chose yes"
+                  type="radio"
+                />
+                <label class="product__option" for="chose yes">yes</label>
+
+                <input
+                  class="product__input"
+                  name="Eyebrows"
+                  id="chose"
+                  type="radio"
+                />
+                <label class="product__option" for="chose">no</label>
+              </div>
+              <button type="submit" class="product__submit animate">
+                Add to cart
+              </button>
+              <p class="product__parag animate">
+                Please check the announcement bar for the current turnaround
+                time (drawing before postage)
+              </p>
+              <p class="product__parag animate">THE PROCESS...</p>
+              <p class="product__parag animate">
+                - After your purchase you will receive a confirmation email.
+                Please reply to this email with the image you'd like to use. If
+                you have a few options and are unsure which one to use, you can
+                send them all to me and I will suggest which one I think will
+                work best for an illustration. - For best results please ensure
+                the photo you select is good quality, has good lighting, is
+                unedited, and not screenshotted, with no major body parts
+                cropped out. - If you wish to add text (ie. name, date, quote)
+                to your illustration, please type this in the 'special
+                instructions' field at checkout along with the font (1,2 or 3).
+                - If you have any particular colour preferences, please also
+                type this into the "special instructions" field at checkout. -
+                Up to three changes are allowed to be made to ensure you are
+                happy with the final illustration.
+              </p>
+              <p class="product__parag animate">
+                Your final order will include high quality PNG files sent to
+                your email with three background options ( a white background; a
+                colour I think compliments your illustration + an arch design).
+                If you have a specific background colour you would like please
+                state this in the 'special instructions' field at checkout.
+              </p>
+              <p class="product__parag animate">
+                Pricing is based on the photo provided ~ if you require major
+                changes to the photo please email artby.tayah@hotmail.com for a
+                quote.
+              </p>
+              <p class="product__parag animate">
+                If you have purchased a physical print, you will be able to
+                choose which copy of the illustration you would like printed +
+                shipped.
+              </p>
+              <p class="product__parag animate">*frame not included</p>
+              <p class="product__parag animate">
+                Please note ~ physical prints are only available Australia wide.
+                If you are an international customer, please select the digital
+                file option.
+              </p>
             </div>
           </form>
         </section>
       </main>
       <footer class="footer">
         <a class="footer__link" href=""
-          ><img class="footer__img" src="images/whiteInst.png" alt=""
+          ><img class="footer__img animate" src="images/whiteInst.png" alt=""
         /></a>
       </footer>
       <div class="popup">
@@ -74,6 +237,8 @@
         </div>
       </div>
     </div>
+
     <script src="script/script.js"></script>
+    <script src="script/anim.js"></script>
   </body>
 </html>

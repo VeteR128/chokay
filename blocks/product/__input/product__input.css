@@ -1,0 +1,10 @@
+.product__input {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+.product__input:checked + .product__option {
+  background-color: blanchedalmond;
+  color: brown;
+  border: 2px solid blanchedalmond;
+}

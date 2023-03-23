@@ -1,0 +1,11 @@
+.product__submit {
+  max-width: 1100px;
+  width: 100%;
+  background-color: rgb(187, 145, 107);
+  padding: 5px 0;
+  margin-top: 15px;
+  border: 2px solid rgba(92, 66, 66, 0.5);
+}
+.product__submit:hover {
+  border: 2px solid rgba(92, 66, 66, 1);
+}

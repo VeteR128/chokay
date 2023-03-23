@@ -1,0 +1,7 @@
+.product__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+
+  margin: 50px 50px;
+}
