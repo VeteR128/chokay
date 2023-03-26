@@ -38,3 +38,5 @@
 @import url(../blocks/product/__parag/product__parag.css);
 @import url(../blocks/product/__submit/product__submit.css);
 @import url(../blocks/animate/animate.css);
+@import url(../blocks/product/__quantity/product__quantity.css);
+@import url(../blocks/product/__value/product__value.css);
