@@ -52,5 +52,54 @@ inputs.forEach((input) => {
     if (e.target === document.getElementById("6")) {
       price.textContent = num + 50;
     }
+    if (e.target === document.getElementById("Style basic")) {
+      price.textContent = red - 10;
+      document
+        .getElementById("Style basic")
+        .setAttribute("disabled", "disabled");
+      document.getElementById("Style").removeAttribute("disabled");
+    }
+    if (
+      e.target === document.getElementById("2") &&
+      document.getElementById("Style").getAttribute("disabled", "disabled")
+    ) {
+      price.textContent = num + 20;
+    }
+    if (
+      e.target === document.getElementById("1") &&
+      document.getElementById("Style").getAttribute("disabled", "disabled")
+    ) {
+      price.textContent = num + 10;
+    }
+    if (
+      e.target === document.getElementById("3") &&
+      document.getElementById("Style").getAttribute("disabled", "disabled")
+    ) {
+      price.textContent = num + 30;
+    }
+    if (
+      e.target === document.getElementById("4") &&
+      document.getElementById("Style").getAttribute("disabled", "disabled")
+    ) {
+      price.textContent = num + 40;
+    }
+    if (
+      e.target === document.getElementById("5") &&
+      document.getElementById("Style").getAttribute("disabled", "disabled")
+    ) {
+      price.textContent = num + 50;
+    }
+    if (
+      e.target === document.getElementById("6") &&
+      document.getElementById("Style").getAttribute("disabled", "disabled")
+    ) {
+      price.textContent = num + 60;
+    }
+
+    if (e.target === document.getElementById("Style")) {
+      price.textContent = red + 10;
+      document.getElementById("Style").setAttribute("disabled", "disabled");
+      document.getElementById("Style basic").removeAttribute("disabled");
+    }
   });
 });

@@ -1,9 +1,10 @@
+const pricered = 15;
 const card = {
   p12334114: {
     name: "Basic Custom Illustration",
     url: "#",
     image: "../images/samurai_champloo_JIN_pose_Wallpaper_rrn252.jpg",
-    price: 133,
+    price: 123,
   },
   p12444114: {
     name: "BasicLineIllustration",
@@ -55,8 +56,14 @@ document.querySelector(".product__submit").addEventListener("click", (evt) => {
     let articul = evt.target.dataset["articul"];
     if (data[articul] !== undefined) {
       data[articul]["count"]++;
+      data[articul]["price"] += Number(
+        document.querySelector(".price").textContent
+      );
     } else {
       data[articul] = card[articul];
+      data[articul]["price"] = Number(
+        document.querySelector(".price").textContent
+      );
       data[articul]["count"] = 1;
     }
     localStorage.setItem("card", JSON.stringify(data));
