@@ -39,7 +39,9 @@
               <h1 class="product__title animate">
                 Detailed Custom Illustration
               </h1>
-              <h2 class="product__price animate">$50.00 AUD</h2>
+              <h2 class="product__price animate">
+                $<span class="price">50</span>.00 AUD
+              </h2>
               <h2 class="product__subtitle animate">Format</h2>
               <div class="product__container animate">
                 <input
@@ -130,7 +132,11 @@
                 <input class="product__quantity" type="number" value="1" />
                 <button id="plus" class="product__value">+</button>
               </div>
-              <button type="submit" class="product__submit animate">
+              <button
+                data-articul="p12334166"
+                type="submit"
+                class="product__submit animate"
+              >
                 Add to cart
               </button>
               <p class="product__parag animate">
@@ -203,5 +209,6 @@
 
     <script src="script/script.js"></script>
     <script src="script/anim.js"></script>
+    <script src="script/product.js"></script>
   </body>
 </html>

@@ -3,6 +3,7 @@
   width: 1px;
   height: 1px;
 }
+
 .product__input:checked + .product__option {
   background-color: blanchedalmond;
   color: brown;
