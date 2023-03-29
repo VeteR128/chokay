@@ -1,63 +1,74 @@
-const pricered = 15;
+const image = document.querySelector(".product__img").getAttribute("src");
+const eyebrows = document.querySelector('input[name="Eyebrows"]');
+const quantity = document.querySelector(".product__quantity");
+
 const card = {
   p12334114: {
     name: "Basic Custom Illustration",
     url: "#",
-    image: "../images/samurai_champloo_JIN_pose_Wallpaper_rrn252.jpg",
+    image: image,
     price: 123,
   },
   p12444114: {
     name: "BasicLineIllustration",
     url: "#",
-    image: "../images/samurai_champloo_JIN_pose_Wallpaper_rrn252.jpg",
+    image: image,
     price: 123,
   },
   p22334154: {
     name: "BusinessIllustration",
     url: "#",
-    image: "../images/samurai_champloo_JIN_pose_Wallpaper_rrn252.jpg",
+    image: image,
     price: 123,
   },
   p123345514: {
     name: "BusinessProductIllustration",
     url: "#",
-    image: "../images/samurai_champloo_JIN_pose_Wallpaper_rrn252.jpg",
+    image: image,
     price: 123,
   },
   p12352114: {
     name: "ColouredLineIllustration",
     url: "#",
-    image: "../images/samurai_champloo_JIN_pose_Wallpaper_rrn252.jpg",
+    image: image,
     price: 123,
   },
   p12334166: {
     name: "DetailedCustomIllustration",
     url: "#",
-    image: "../images/samurai_champloo_JIN_pose_Wallpaper_rrn252.jpg",
+    image: image,
     price: 123,
   },
   p15374114: {
     name: "PetIllustration",
     url: "#",
-    image: "../images/samurai_champloo_JIN_pose_Wallpaper_rrn252.jpg",
+    image: image,
     price: 123,
   },
   p12431114: {
     name: "RushFee",
     url: "#",
-    image: "../images/samurai_champloo_JIN_pose_Wallpaper_rrn252.jpg",
+    image: image,
     price: 123,
   },
 };
 const data = {};
 document.querySelector(".product__submit").addEventListener("click", (evt) => {
-  evt.preventDefault();
+  console.log(quantity.value);
   if (evt.target.classList.contains("product__submit")) {
+    evt.preventDefault();
     let articul = evt.target.dataset["articul"];
-    if (data[articul] !== undefined) {
-      data[articul]["count"]++;
-      data[articul]["price"] += Number(
-        document.querySelector(".price").textContent
+    if (
+      data[articul] !== undefined &&
+      data[articul]["price"] ===
+        Number(document.querySelector(".price").textContent)
+    ) {
+      data[articul]["count"] += Number(quantity.value);
+      localStorage.setItem(
+        `${Number(document.querySelector(".price").textContent)}+${
+          data[articul]["name"]
+        }`,
+        JSON.stringify(data)
       );
     } else {
       data[articul] = card[articul];
@@ -65,7 +76,15 @@ document.querySelector(".product__submit").addEventListener("click", (evt) => {
         document.querySelector(".price").textContent
       );
       data[articul]["count"] = 1;
+
+      data[articul]["count"] += quantity.value - 1;
     }
-    localStorage.setItem("card", JSON.stringify(data));
+
+    localStorage.setItem(
+      `${Number(document.querySelector(".price").textContent)}+${
+        data[articul]["name"]
+      }`,
+      JSON.stringify(data)
+    );
   }
 });

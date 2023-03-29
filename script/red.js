@@ -59,6 +59,7 @@ document.querySelector(".product__submit").addEventListener("click", (evt) => {
       data[articul] = card[articul];
       data[articul]["count"] = 1;
     }
+
     localStorage.setItem("cart", JSON.stringify(data));
   }
 });
