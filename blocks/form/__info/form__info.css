@@ -1,4 +1,5 @@
 .form__info {
   grid-column: 1/3;
   font-size: 1.4rem;
+  color: black;
 }

@@ -10,6 +10,7 @@
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__navigation/header__navigation.css);
 @import url(../blocks/header/_theme/header_theme_red.css);
+@import url(../blocks/error/error.css);
 
 @import url(../blocks/main/main.css);
 @import url(../blocks/main/_theme/main_theme_red.css);

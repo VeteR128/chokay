@@ -39,15 +39,32 @@
             @artby.tayah
           </h1>
           <form class="form" action="">
-            <input class="form__info" placeholder="Name" type="text" />
-            <input class="form__info" placeholder="Email" type="email" />
             <input
-              class="form__phone"
+              required
+              class="form__info"
+              minlength="2"
+              placeholder="Name"
+              type="text"
+            />
+            <input
+              required
+              class="form__info"
+              placeholder="Email"
+              type="email"
+            />
+            <input
+              required
+              class="form__info"
               placeholder="Phone number"
               type="number"
             />
-            <input class="form__comment" placeholder="Comment" type="text" />
-            <input class="form__button" value="send" type="submit" />
+            <input
+              required
+              class="form__info"
+              placeholder="Comment"
+              type="text"
+            />
+            <input class="form__button" disabled value="send" type="submit" />
           </form>
         </section>
       </main>
@@ -72,5 +89,6 @@
     </div>
     <script src="script/script.js"></script>
     <script src="script/anim.js"></script>
+    <script src="script/validation.js"></script>
   </body>
 </html>
