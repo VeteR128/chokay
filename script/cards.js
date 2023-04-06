@@ -67,7 +67,7 @@ document.querySelector(".product__submit").addEventListener("click", (evt) => {
       localStorage.setItem(
         `${Number(document.querySelector(".price").textContent)}+${
           data[articul]["name"]
-        }`,
+        } card`,
         JSON.stringify(data)
       );
     } else {
@@ -78,12 +78,13 @@ document.querySelector(".product__submit").addEventListener("click", (evt) => {
       data[articul]["count"] = 1;
 
       data[articul]["count"] += quantity.value - 1;
+      data[articul]["url"] = window.location.href;
     }
 
     localStorage.setItem(
       `${Number(document.querySelector(".price").textContent)}+${
         data[articul]["name"]
-      }`,
+      } card`,
       JSON.stringify(data)
     );
   }
