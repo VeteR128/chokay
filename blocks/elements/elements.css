@@ -1,0 +1,10 @@
+.elements {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.element:last-child {
+  margin-bottom: 0;
+}

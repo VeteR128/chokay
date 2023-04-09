@@ -1,0 +1,12 @@
+.element__quantity {
+  max-width: 30px;
+  height: 25px;
+  width: 100%;
+  text-align: center;
+  -webkit-appearance: none;
+  padding: 0;
+  border: 0;
+}
+.element__quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

@@ -13,7 +13,9 @@ class priceCard {
     this._name = data[key].name;
     this._url = data[key].url;
     this._image = data[key].image;
-    this._price = data[key].count;
+    this._count = data[key].count;
+    this._price = data[key].price;
+
     this._selector = selector;
   }
   _createElement() {
@@ -31,8 +33,11 @@ class priceCard {
     imageCard.alt = this._name;
     const cardName = this.bascetCard.querySelector(".element__title");
     cardName.textContent = this._name;
-    const countCard = this.bascetCard.querySelector(".product__quantity");
-    countCard.value = this._price;
+    const countCard = this.bascetCard.querySelector(".element__quantity");
+    countCard.value = this._count;
+    const tottalPriceCard = this.bascetCard.querySelector(".total");
+    console.log(tottalPriceCard);
+    tottalPriceCard.textContent = this._price * this._count;
     return this.bascetCard;
   }
 }
@@ -40,7 +45,14 @@ for (i = 0; i < Storage; i++) {
   data = JSON.parse(localStorage.getItem(localStorage.key(i)));
   const key = Object.keys(data);
   console.log(data[key].name);
-  const lox = new priceCard(data, key, "#element");
-  const loshok = lox.generateElement();
-  elem.prepend(loshok);
+  const card = new priceCard(data, key, "#element");
+  const newCard = card.generateElement();
+  elem.prepend(newCard);
 }
+let summ = 0;
+const tottalPriceCard = document.querySelectorAll(".total");
+for (i = 0; i < tottalPriceCard.length; i++) {
+  summ += Number(tottalPriceCard[i].textContent);
+}
+const subtotal = document.querySelector(".subtotal");
+subtotal.textContent = summ;

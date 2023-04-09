@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="pages/basket.css">
+    <link rel="stylesheet" href="pages/basket.css" />
     <title>Document</title>
   </head>
   <body class="body">
@@ -32,24 +32,38 @@
         </nav>
       </header>
       <main class="main">
+        <section class="bar">
+          <h1 class="bar__product">PRODUCT</h1>
+          <h2 class="bar__quantity">QUANTITY</h2>
+          <p class="bar__price">TOTAL</p>
+        </section>
         <section class="elements">
           <template id="element">
             <form class="element">
-              <img
-                class="element__image"
-                src=""
-                alt="карачаевск"
-              />
               <div class="element__info">
+                <img class="element__image" src="" alt="карачаевск" />
+
                 <a class="element__title" href="">Карачаевск</a>
               </div>
-              <div class="element__container ">
-                <button id="minus" class="product__value" disabled>-</button>
-                <input class="product__quantity" type="number" value="1" />
-                <button id="plus" class="product__value">+</button>
+              <div class="element__container">
+                <button id="minus" class="element__value">-</button>
+                <input
+                  class="element__quantity"
+                  type="number"
+                  value="1"
+                  min="0"
+                />
+                <button id="plus" class="element__value">+</button>
               </div>
+              <h3 class="element__price">$<span class="total">32</span>.00</h3>
             </form>
           </template>
+        </section>
+        <section class="price">
+          <h2 class="price__total">
+            Subtotal $<span class="subtotal">32</span>.00
+          </h2>
+        </section>
       </main>
       <footer class="footer">
         <a class="footer__link" href=""
@@ -73,6 +87,5 @@
     <script src="script/script.js"></script>
     <script src="script/anim.js"></script>
     <script src="script/basket.js"></script>
-
   </body>
 </html>
