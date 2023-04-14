@@ -2,12 +2,6 @@ const Storage = localStorage.length;
 const elem = document.querySelector(".elements");
 console.log(Storage);
 
-function getCard() {
-  if (localStorage.key.includes("card")) {
-    console.log(localStorage.getItem("70+BasicLineIllustration"));
-  }
-}
-
 class priceCard {
   constructor(data, key, selector) {
     this._name = data[key].name;
@@ -15,7 +9,6 @@ class priceCard {
     this._image = data[key].image;
     this._count = data[key].count;
     this._price = data[key].price;
-
     this._selector = selector;
   }
   _createElement() {
@@ -42,9 +35,9 @@ class priceCard {
   }
 }
 for (i = 0; i < Storage; i++) {
-  data = JSON.parse(localStorage.getItem(localStorage.key(i)));
+  const data = JSON.parse(localStorage.getItem(localStorage.key(i)));
   const key = Object.keys(data);
-  console.log(data[key].name);
+  console.log(Object.keys(data));
   const card = new priceCard(data, key, "#element");
   const newCard = card.generateElement();
   elem.prepend(newCard);

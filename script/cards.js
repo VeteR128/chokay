@@ -64,12 +64,6 @@ document.querySelector(".product__submit").addEventListener("click", (evt) => {
         Number(document.querySelector(".price").textContent)
     ) {
       data[articul]["count"] += Number(quantity.value);
-      localStorage.setItem(
-        `${Number(document.querySelector(".price").textContent)}+${
-          data[articul]["name"]
-        } card`,
-        JSON.stringify(data)
-      );
     } else {
       data[articul] = card[articul];
       data[articul]["price"] = Number(
